@@ -98,15 +98,19 @@ def check_leaderboard_standing():
         log(f"Notice: Leaderboard check error: {e}")
 
 def get_kernel_status(kernel_id: str) -> str:
-    try:
-        api = kaggle.KaggleApi()
-        api.authenticate()
-        st = api.kernels_status(kernel_id)
-        if isinstance(st, dict):
-            return st.get("status", "UNKNOWN")
-        return getattr(st, "status", "UNKNOWN")
-    except Exception as e:
-        return "UNKNOWN"
+    for attempt in range(3):
+        try:
+            api = kaggle.KaggleApi()
+            api.authenticate()
+            st = api.kernels_status(kernel_id)
+            if isinstance(st, dict):
+                return st.get("status", "UNKNOWN")
+            return getattr(st, "status", "UNKNOWN")
+        except Exception as e:
+            if attempt < 2:
+                time.sleep(2)
+            else:
+                return "UNKNOWN"
 
 def try_submit(track: dict) -> tuple[bool, bool]:
     """Returns (submitted_ok, quota_exhausted)."""
