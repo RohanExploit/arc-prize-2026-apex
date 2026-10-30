@@ -169,7 +169,7 @@ def main():
         cycle += 1
         elapsed_hrs = (time.time() - start_time) / 3600.0
         log(f"Elapsed: {elapsed_hrs:.2f} hrs. Continuous execution: running next cycle in 15s...")
-        time.sleep(15)
+        time.sleep(30)
 
 if __name__ == "__main__":
     main()
