@@ -1,0 +1,22 @@
+{
+  "id": "rohanexploit/arc3-apex-sglang-v3",
+  "title": "ARC3 Apex SGLang v3 (Anti-Deliberation + Spatial Mask)",
+  "code_file": "arc3-apex-sglang-v3.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "false",
+  "accelerator": "rtx6000",
+  "dataset_sources": [
+    "dfranzen/pennyroyal-v253",
+    "dfranzen/taaf-kaggle-source-bundle-copy"
+  ],
+  "competition_sources": [
+    "arc-prize-2026-arc-agi-3"
+  ],
+  "model_sources": [
+    "dfranzen/intel-qwen3.8-flash-next-w4a16-autoround/transformers/default/1",
+    "dfranzen/albucino-qwen3-8-flash-next-drafter/transformers/default/1"
+  ]
+}
