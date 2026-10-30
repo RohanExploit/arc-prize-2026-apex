@@ -1,16 +1,25 @@
 # Kaggle credentials (project-local, never check in)
 .kaggle/
+*.key
+*.pem
 
 # Python
 .venv/
 __pycache__/
 *.pyc
 
+# Logs & Large Traces
+logs.log
+*.log
+autopilot.log
+scratch/artifacts/
+scratch/solver_analysis/
+scratch/transcripts/
+
 # Vendored framework + downloaded game source + agent recordings
 vendor/
 environment_files/
 recordings/
-logs.log
 
 # Generated artefacts
 notebooks/submission.ipynb
@@ -20,3 +29,5 @@ reference/
 .DS_Store
 .idea/
 .vscode/
+
+*.zip

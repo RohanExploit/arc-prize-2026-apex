@@ -59,9 +59,8 @@ def main() -> None:
 
     logging.basicConfig(level=logging.INFO, format="%(message)s")
 
-    # NORMAL = local execution; game source is downloaded on first call into
-    # ./environment_files/ and cached for subsequent runs.
-    arc = arc_agi.Arcade(operation_mode=OperationMode.NORMAL)
+    # OFFLINE = pure offline execution using local environment_files without network latency
+    arc = arc_agi.Arcade(operation_mode=OperationMode.OFFLINE)
     all_envs = arc.get_environments()
 
     if args.list:
@@ -111,7 +110,7 @@ def main() -> None:
         final = agent.frames[-1]
         per_game.append((game_id, final.state, final.levels_completed,
                          agent.action_counter))
-        print(f"  → state={final.state}, levels_completed={final.levels_completed}, "
+        print(f"  -> state={final.state}, levels_completed={final.levels_completed}, "
               f"actions={agent.action_counter}")
 
     sc = arc.get_scorecard()

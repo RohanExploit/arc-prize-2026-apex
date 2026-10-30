@@ -28,7 +28,7 @@ from textwrap import dedent
 #   "rtx6000"  — Nvidia RTX 6000 (g4-standard-48). ARC-AGI-3 exclusive,
 #                burns GPU quota faster — use only when you're confident.
 # ─────────────────────────────────────────────────────────────────────────────
-ACCELERATOR = "t4"
+ACCELERATOR = "rtx6000"
 
 # Internal mapping; don't edit unless Kaggle adds new options.
 _ACCELERATORS = {
@@ -199,18 +199,18 @@ def build() -> dict:
 
 def main() -> None:
     NOTEBOOK_PATH.parent.mkdir(parents=True, exist_ok=True)
-    NOTEBOOK_PATH.write_text(json.dumps(build(), indent=1))
+    NOTEBOOK_PATH.write_text(json.dumps(build(), indent=1), encoding="utf-8")
     print(f"[build_notebook] Wrote {NOTEBOOK_PATH.relative_to(ROOT)}  "
           f"(accelerator: {ACCELERATOR})")
 
     # Keep notebooks/kernel-metadata.json in sync so the user never has to
-    # edit it just to flip CPU ↔ GPU.
+    # edit it just to flip CPU <-> GPU.
     if METADATA_PATH.exists():
-        meta = json.loads(METADATA_PATH.read_text())
+        meta = json.loads(METADATA_PATH.read_text(encoding="utf-8"))
         wanted = _ACCELERATORS[ACCELERATOR]["gpu"]
         if meta.get("enable_gpu") != wanted:
             meta["enable_gpu"] = wanted
-            METADATA_PATH.write_text(json.dumps(meta, indent=2) + "\n")
+            METADATA_PATH.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
             print(f"[build_notebook] Synced enable_gpu={wanted} in "
                   f"{METADATA_PATH.relative_to(ROOT)}")
 
