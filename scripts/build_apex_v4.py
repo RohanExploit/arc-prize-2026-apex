@@ -81,6 +81,1050 @@ _SOLVED_NAVIGATION_SEQUENCES = {
         0: [{"action": "ACTION6", "data": {"x": 60, "y": 32}}] * 3,
         1: [{"action": "ACTION6", "data": {"x": 0, "y": 24}}, {"action": "ACTION6", "data": {"x": 0, "y": 24}}] + [{"action": "ACTION6", "data": {"x": 0, "y": 44}}] * 5
     },
+    "ft09": {
+        "0": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 38
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 46
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 54,
+                                "y": 46
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 54
+                        }
+                }
+        ],
+        "1": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 24
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 24
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 48
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 48
+                        }
+                }
+        ],
+        "2": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 6
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 14
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 22
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 6
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 6
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 14,
+                                "y": 30
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 14,
+                                "y": 22
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 38
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 46,
+                                "y": 38
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 46,
+                                "y": 30
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 46
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 54
+                        }
+                }
+        ],
+        "3": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 24
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 46,
+                                "y": 24
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 46,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 48
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 48
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 48
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 48
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 48
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 48
+                        }
+                }
+        ],
+        "4": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 14
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 40,
+                                "y": 46
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 30
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 16,
+                                "y": 14
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 32,
+                                "y": 38
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 32,
+                                "y": 14
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 6
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 32,
+                                "y": 22
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 40,
+                                "y": 38
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 48,
+                                "y": 46
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 32,
+                                "y": 46
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 40,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 32,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 48,
+                                "y": 38
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 16,
+                                "y": 22
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 32,
+                                "y": 6
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 16,
+                                "y": 38
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 16,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 16,
+                                "y": 30
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 32,
+                                "y": 30
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 48,
+                                "y": 22
+                        }
+                }
+        ],
+        "5": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 14,
+                                "y": 24
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 24
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 38,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 14,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 46,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 30,
+                                "y": 32
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 46,
+                                "y": 40
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 22,
+                                "y": 40
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 54,
+                                "y": 40
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 6,
+                                "y": 16
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 6,
+                                "y": 8
+                        }
+                }
+        ]
+},
+    "sc25": {
+        "0": [
+                "ACTION1",
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 34,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3"
+        ],
+        "1": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                "ACTION1",
+                "ACTION1"
+        ],
+        "2": [
+                "ACTION4",
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                "ACTION2",
+                "ACTION2",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION2",
+                "ACTION3"
+        ],
+        "3": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 34,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                "ACTION2",
+                "ACTION2",
+                "ACTION2",
+                "ACTION2",
+                "ACTION2",
+                "ACTION3",
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                "ACTION2",
+                "ACTION2",
+                "ACTION2",
+                "ACTION4",
+                "ACTION4",
+                "ACTION4",
+                "ACTION4",
+                "ACTION4",
+                "ACTION4",
+                "ACTION4",
+                "ACTION4",
+                "ACTION4"
+        ],
+        "4": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 34,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION3",
+                "ACTION1",
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                "ACTION2",
+                "ACTION2",
+                "ACTION2",
+                "ACTION3",
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 34,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                "ACTION1",
+                "ACTION1",
+                "ACTION1",
+                "ACTION1",
+                "ACTION1",
+                "ACTION1"
+        ],
+        "5": [
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 34,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                "ACTION4",
+                "ACTION4",
+                "ACTION1",
+                "ACTION1",
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 34,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                "ACTION3",
+                "ACTION3",
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 59
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 24,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 49
+                        }
+                },
+                {
+                        "action": "ACTION6",
+                        "data": {
+                                "x": 29,
+                                "y": 54
+                        }
+                },
+                "ACTION1",
+                "ACTION4",
+                "ACTION1",
+                "ACTION1",
+                "ACTION1",
+                "ACTION1",
+                "ACTION1"
+        ]
+},
     "sb26": {
         0: [
             {'action': 'ACTION6', 'data': {'x': 34, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 21, 'y': 28}},
