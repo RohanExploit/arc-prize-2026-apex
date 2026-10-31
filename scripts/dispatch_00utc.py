@@ -83,7 +83,7 @@ def check_leaderboard_standing():
     except Exception as e:
         log(f"Notice: Leaderboard check error: {e}")
 
-def find_best_complete_version(kernel_id: str, max_v: int = 5) -> int | None:
+def find_best_complete_version(kernel_id: str, max_v: int = 10) -> int | None:
     for attempt in range(2):
         try:
             api = kaggle.KaggleApi()

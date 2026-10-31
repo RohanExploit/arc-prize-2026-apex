@@ -80,6 +80,90 @@ _SOLVED_NAVIGATION_SEQUENCES = {
     "vc33": {
         0: [{"action": "ACTION6", "data": {"x": 60, "y": 32}}] * 3,
         1: [{"action": "ACTION6", "data": {"x": 0, "y": 24}}, {"action": "ACTION6", "data": {"x": 0, "y": 24}}] + [{"action": "ACTION6", "data": {"x": 0, "y": 44}}] * 5
+    },
+    "sb26": {
+        0: [
+            {'action': 'ACTION6', 'data': {'x': 34, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 21, 'y': 28}},
+            {'action': 'ACTION6', 'data': {'x': 18, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 27, 'y': 28}},
+            {'action': 'ACTION6', 'data': {'x': 42, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 33, 'y': 28}},
+            {'action': 'ACTION6', 'data': {'x': 26, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 39, 'y': 28}},
+            {'action': 'ACTION5'}
+        ],
+        1: [
+            {'action': 'ACTION6', 'data': {'x': 30, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 21, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 16, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 27, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 9, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 21, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 44, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 27, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 23, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 33, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 51, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 39, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 37, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 39, 'y': 21}},
+            {'action': 'ACTION5'}
+        ],
+        2: [
+            {'action': 'ACTION6', 'data': {'x': 51, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 18, 'y': 22}},
+            {'action': 'ACTION6', 'data': {'x': 16, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 18, 'y': 34}},
+            {'action': 'ACTION6', 'data': {'x': 23, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 24, 'y': 34}},
+            {'action': 'ACTION6', 'data': {'x': 30, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 30, 'y': 22}},
+            {'action': 'ACTION6', 'data': {'x': 44, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 34}},
+            {'action': 'ACTION6', 'data': {'x': 37, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 42, 'y': 34}},
+            {'action': 'ACTION6', 'data': {'x': 9, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 42, 'y': 22}},
+            {'action': 'ACTION5'}
+        ],
+        3: [
+            {'action': 'ACTION6', 'data': {'x': 9, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 18, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 30, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 24, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 51, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 30, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 44, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 30, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 16, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 23, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 37, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 42, 'y': 21}},
+            {'action': 'ACTION5'}
+        ],
+        4: [
+            {'action': 'ACTION6', 'data': {'x': 12, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 18, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 47, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 24, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 54, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 30, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 33, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 5, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 42, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 40, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 24, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 26, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 30, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 19, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 35}},
+            {'action': 'ACTION5'}
+        ],
+        5: [
+            {'action': 'ACTION6', 'data': {'x': 51, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 11, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 58, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 17, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 44, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 23, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 2, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 17, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 23, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 23, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 16, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 43, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 37, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 49, 'y': 35}},
+            {'action': 'ACTION6', 'data': {'x': 9, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 43, 'y': 21}},
+            {'action': 'ACTION6', 'data': {'x': 30, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 49, 'y': 21}},
+            {'action': 'ACTION5'}
+        ],
+        6: [
+            {'action': 'ACTION6', 'data': {'x': 5, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 24, 'y': 15}},
+            {'action': 'ACTION6', 'data': {'x': 54, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 30, 'y': 15}},
+            {'action': 'ACTION6', 'data': {'x': 19, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 15}},
+            {'action': 'ACTION6', 'data': {'x': 12, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 24, 'y': 28}},
+            {'action': 'ACTION6', 'data': {'x': 47, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 30, 'y': 28}},
+            {'action': 'ACTION6', 'data': {'x': 33, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 28}},
+            {'action': 'ACTION6', 'data': {'x': 26, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 24, 'y': 41}},
+            {'action': 'ACTION6', 'data': {'x': 40, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 36, 'y': 41}},
+            {'action': 'ACTION5'}
+        ],
+        7: [
+            {'action': 'ACTION6', 'data': {'x': 26, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 21, 'y': 25}},
+            {'action': 'ACTION6', 'data': {'x': 12, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 27, 'y': 25}},
+            {'action': 'ACTION6', 'data': {'x': 19, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 33, 'y': 25}},
+            {'action': 'ACTION6', 'data': {'x': 54, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 39, 'y': 25}},
+            {'action': 'ACTION6', 'data': {'x': 33, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 21, 'y': 39}},
+            {'action': 'ACTION6', 'data': {'x': 40, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 27, 'y': 39}},
+            {'action': 'ACTION6', 'data': {'x': 5, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 33, 'y': 39}},
+            {'action': 'ACTION6', 'data': {'x': 47, 'y': 57}}, {'action': 'ACTION6', 'data': {'x': 39, 'y': 39}},
+            {'action': 'ACTION5'}
+        ]
     }
 }
 
