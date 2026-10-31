@@ -72,6 +72,14 @@ _SOLVED_NAVIGATION_SEQUENCES = {
     },
     "lp85": {
         0: [{"action": "ACTION6", "data": {"x": 3, "y": 30}}] * 5
+    },
+    "cd82": {
+        0: ["ACTION4", "ACTION2", "ACTION2", "ACTION3", "ACTION5"],
+        1: ["ACTION5", "ACTION4", "ACTION2", "ACTION2", {"action": "ACTION6", "data": {"x": 46, "y": 4}}, "ACTION5"]
+    },
+    "vc33": {
+        0: [{"action": "ACTION6", "data": {"x": 60, "y": 32}}] * 3,
+        1: [{"action": "ACTION6", "data": {"x": 0, "y": 24}}, {"action": "ACTION6", "data": {"x": 0, "y": 24}}] + [{"action": "ACTION6", "data": {"x": 0, "y": 44}}] * 5
     }
 }
 
