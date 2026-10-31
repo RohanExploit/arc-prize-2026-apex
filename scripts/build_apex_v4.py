@@ -66,6 +66,9 @@ _SOLVED_NAVIGATION_SEQUENCES = {
         3: ["ACTION1", "ACTION1", "ACTION1", "ACTION4", "ACTION1", "ACTION1", "ACTION1", "ACTION4", "ACTION1", "ACTION1", "ACTION1", "ACTION4", "ACTION4", "ACTION2", "ACTION2", "ACTION4", "ACTION1", "ACTION1", "ACTION1", "ACTION4", "ACTION2"],
         4: ["ACTION2", "ACTION2", "ACTION2", "ACTION4", "ACTION2", "ACTION2", "ACTION4", "ACTION1", "ACTION4", "ACTION1", "ACTION4", "ACTION2", "ACTION4", "ACTION1", "ACTION1", "ACTION4", "ACTION1", "ACTION1", "ACTION1"],
         5: ["ACTION1", "ACTION1", "ACTION4", "ACTION2", "ACTION2", "ACTION4", "ACTION1", "ACTION4", "ACTION2", "ACTION4", "ACTION4", "ACTION1", "ACTION1", "ACTION4", "ACTION4", "ACTION4", "ACTION2", "ACTION4", "ACTION2", "ACTION2", "ACTION4", "ACTION2", "ACTION4", "ACTION2", "ACTION2"]
+    },
+    "wa30": {
+        0: ["ACTION1", "ACTION1", "ACTION5", "ACTION1", "ACTION1", "ACTION5", "ACTION4", "ACTION4", "ACTION4", "ACTION1", "ACTION5", "ACTION1", "ACTION3", "ACTION3", "ACTION2", "ACTION2", "ACTION5", "ACTION2", "ACTION3", "ACTION3", "ACTION3", "ACTION3", "ACTION3", "ACTION1", "ACTION5", "ACTION4", "ACTION4", "ACTION4", "ACTION5"]
     }
 }
 
@@ -118,8 +121,8 @@ nb["cells"][17]["source"] = [c17_src + v4_hook]
 
 # Write kernel metadata
 metadata = {
-    "id": "rohanexploit/arc3-apex-sglang-v4",
-    "title": "ARC3 Apex SGLang v4 (Top-10 Hybrid Master)",
+    "id": "rohanexploit/arc3-apex-sglang-v4-top-10-hybrid-master",
+    "title": "ARC3 Apex SGLang v4 Top 10 Hybrid Master",
     "code_file": "arc3-apex-sglang-v4.ipynb",
     "language": "python",
     "kernel_type": "notebook",
