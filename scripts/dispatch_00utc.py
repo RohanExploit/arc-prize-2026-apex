@@ -83,6 +83,24 @@ def check_leaderboard_standing():
     except Exception as e:
         log(f"Notice: Leaderboard check error: {e}")
 
+def find_best_complete_version(kernel_id: str, max_v: int = 5) -> int | None:
+    for attempt in range(2):
+        try:
+            api = kaggle.KaggleApi()
+            api.authenticate()
+            for v in range(max_v, 0, -1):
+                try:
+                    st = api.kernels_status(f"{kernel_id}/{v}")
+                    s = st.get("status") if isinstance(st, dict) else getattr(st, "status", "")
+                    if "COMPLETE" in str(s):
+                        return v
+                except Exception:
+                    continue
+            return None
+        except Exception:
+            time.sleep(1)
+    return None
+
 def get_kernel_status(kernel_id: str) -> str:
     for attempt in range(3):
         try:
@@ -126,21 +144,29 @@ def has_submitted_today() -> tuple[bool, str]:
 
 def try_submit(track: dict) -> tuple[bool, bool]:
     """Returns (submitted_ok, quota_exhausted)."""
-    # 1. Check if kernel is complete
-    k_status = str(get_kernel_status(track["kernel"]))
-    log(f"Checking {track['name']} -> Kernel status: {k_status}")
-    if "COMPLETE" not in k_status:
-        log(f"Notice: Kernel {track['kernel']} is currently {k_status}, cannot submit yet.")
-        return False, False
+    # 1. Resolve complete version dynamically
+    sub_version = track.get("version")
+    if sub_version is None:
+        sub_version = find_best_complete_version(track["kernel"])
+        if sub_version is None:
+            k_status = str(get_kernel_status(track["kernel"]))
+            log(f"Notice: Kernel {track['kernel']} has no completed versions yet (status={k_status}).")
+            return False, False
+        log(f"Resolved latest COMPLETE version for {track['kernel']}: v{sub_version}")
+    else:
+        st = str(get_kernel_status(f"{track['kernel']}/{sub_version}"))
+        if "COMPLETE" not in st:
+            log(f"Notice: Kernel {track['kernel']}/v{sub_version} is {st}, not COMPLETE.")
+            return False, False
 
     cmd = [
         str(KAGGLE_BIN), "competitions", "submit", COMPETITION,
         "-k", track["kernel"],
+        "-v", str(sub_version),
+        "-f", track["file"],
+        "-m", track["message"]
     ]
-    if track.get("version") is not None:
-        cmd.extend(["-v", str(track["version"])])
-    cmd.extend(["-f", track["file"], "-m", track["message"]])
-    log(f"Attempting dispatch: {track['name']}...")
+    log(f"Attempting dispatch: {track['name']} (v{sub_version})...")
     try:
         res = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
         output = (res.stdout + res.stderr).strip()
