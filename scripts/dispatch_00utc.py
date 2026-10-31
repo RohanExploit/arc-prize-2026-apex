@@ -29,11 +29,18 @@ SCRATCH_DIR = ROOT / "scratch"
 
 TRACKS = [
     {
-        "name": "Track 1 (Master Apex): SGLang v2 (D-Prime + M85 Memory + SOTA Solver -> Top 20)",
+        "name": "Track 1 (Apex v3 Master): SGLang v3 (Spatial Masking + Token Governor + mem 0.88)",
+        "kernel": "rohanexploit/arc3-apex-sglang-v3",
+        "version": 1,
+        "file": "submission.parquet",
+        "message": "Autonomous Top-20 Push: SGLang v3 Master Apex (Target >= 39.79%)",
+    },
+    {
+        "name": "Track 2 (Apex v2 Proven 21.06%): SGLang v2 (D-Prime + M85 Memory)",
         "kernel": "rohanexploit/arc3-apex-sglang-v2",
         "version": 2,
         "file": "submission.parquet",
-        "message": "Autonomous Top-20 Push: SGLang v2 Master Apex (Target >= 39.52%)",
+        "message": "Autonomous Top-20 Push: SGLang v2 Master Apex (21.06% baseline)",
     },
     {
         "name": "Track 2 (Apex Standby): Adaptive Duck SGLang v1 (Verified COMPLETE, 31.21%)",
@@ -112,6 +119,32 @@ def get_kernel_status(kernel_id: str) -> str:
             else:
                 return "UNKNOWN"
 
+
+def has_submitted_today() -> tuple[bool, str]:
+    try:
+        api = kaggle.KaggleApi()
+        api.authenticate()
+        subs = api.competition_submissions(COMPETITION)
+        if not subs:
+            return False, ""
+        latest = subs[0]
+        sub_date = getattr(latest, "date", None)
+        status = getattr(latest, "status", None)
+        score = getattr(latest, "public_score", None) or getattr(latest, "publicScore", None)
+        ref = getattr(latest, "ref", None)
+        if sub_date:
+            utc_today = datetime.datetime.now(datetime.timezone.utc).date()
+            if hasattr(sub_date, "date"):
+                sub_d = sub_date.date()
+            else:
+                sub_d = datetime.datetime.fromisoformat(str(sub_date)[:10]).date()
+            if sub_d == utc_today:
+                return True, f"Ref={ref}, Status={status}, Score={score}"
+        return False, ""
+    except Exception as e:
+        log(f"Notice: submission check error: {e}")
+        return False, ""
+
 def try_submit(track: dict) -> tuple[bool, bool]:
     """Returns (submitted_ok, quota_exhausted)."""
     # 1. Check if kernel is complete
@@ -154,15 +187,18 @@ def main_loop():
         utc_now = datetime.datetime.now(datetime.timezone.utc)
         log(f"Current UTC: {utc_now.strftime('%H:%M:%S')} (Reset at 00:00:00 UTC)")
 
-        # Iterate through tracks to consume available slots
-        for track in TRACKS:
-            success, quota_exhausted = try_submit(track)
-            if success:
-                log(f"Slot successfully consumed for {track['name']}!")
-                break
-            if quota_exhausted:
-                log("Quota exhausted for today. Waiting for 00:00:00 UTC reset...")
-                break
+        submitted, sub_info = has_submitted_today()
+        if submitted:
+            log(f"Today's submission quota consumed ({sub_info}). Armed for 00:00:00 UTC reset...")
+        else:
+            for track in TRACKS:
+                success, quota_exhausted = try_submit(track)
+                if success:
+                    log(f"Slot successfully consumed for {track['name']}!")
+                    break
+                if quota_exhausted:
+                    log("Quota exhausted for today. Waiting for 00:00:00 UTC reset...")
+                    break
 
         # Check leaderboard status every 30 minutes
         if utc_now.minute in (0, 30):
