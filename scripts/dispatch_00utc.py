@@ -31,7 +31,7 @@ TRACKS = [
     {
         "name": "Track 1 (Apex v4 Master): SGLang v4 (Deterministic 115% Physics Solvers + Hybrid SGLang Server)",
         "kernel": "rohanexploit/arc3-apex-sglang-v4-top-10-hybrid-master",
-        "version": 1,
+        "version": None,
         "file": "submission.parquet",
         "message": "Autonomous Top-10 Push: SGLang v4 Master Hybrid (Target >= 46.82%)",
     },
@@ -136,10 +136,10 @@ def try_submit(track: dict) -> tuple[bool, bool]:
     cmd = [
         str(KAGGLE_BIN), "competitions", "submit", COMPETITION,
         "-k", track["kernel"],
-        "-v", str(track["version"]),
-        "-f", track["file"],
-        "-m", track["message"],
     ]
+    if track.get("version") is not None:
+        cmd.extend(["-v", str(track["version"])])
+    cmd.extend(["-f", track["file"], "-m", track["message"]])
     log(f"Attempting dispatch: {track['name']}...")
     try:
         res = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
