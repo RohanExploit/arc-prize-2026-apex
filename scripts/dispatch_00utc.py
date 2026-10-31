@@ -29,39 +29,18 @@ SCRATCH_DIR = ROOT / "scratch"
 
 TRACKS = [
     {
-        "name": "Track 1 (Apex v3 Master): SGLang v3 (Spatial Masking + Token Governor + mem 0.88)",
+        "name": "Track 1 (Apex v4 Master): SGLang v4 (Deterministic 115% Physics Solvers + Hybrid SGLang Server)",
+        "kernel": "rohanexploit/arc3-apex-sglang-v4-top-10-hybrid-master",
+        "version": 1,
+        "file": "submission.parquet",
+        "message": "Autonomous Top-10 Push: SGLang v4 Master Hybrid (Target >= 46.82%)",
+    },
+    {
+        "name": "Track 2 (Apex v3 Master): SGLang v3 (Spatial Masking + Token Governor + mem 0.88)",
         "kernel": "rohanexploit/arc3-apex-sglang-v3",
         "version": 1,
         "file": "submission.parquet",
-        "message": "Autonomous Top-20 Push: SGLang v3 Master Apex (Target >= 39.79%)",
-    },
-    {
-        "name": "Track 2 (Apex v2 Proven 21.06%): SGLang v2 (D-Prime + M85 Memory)",
-        "kernel": "rohanexploit/arc3-apex-sglang-v2",
-        "version": 2,
-        "file": "submission.parquet",
-        "message": "Autonomous Top-20 Push: SGLang v2 Master Apex (21.06% baseline)",
-    },
-    {
-        "name": "Track 2 (Apex Standby): Adaptive Duck SGLang v1 (Verified COMPLETE, 31.21%)",
-        "kernel": "rohanexploit/arc3-adaptive-duck-sglang",
-        "version": 1,
-        "file": "submission.parquet",
-        "message": "Autonomous Top-20 Push: Adaptive Duck SGLang v1 (31.21% candidate)",
-    },
-    {
-        "name": "Track 3: Qwen3.8 NVFP4 MTP Fallback (Account Best 3.43%)",
-        "kernel": "rohanexploit/arc3-duck-flash-nvfp4-fork",
-        "version": 1,
-        "file": "submission.parquet",
-        "message": "Autonomous Top-20 Push: Qwen3.8 Flash-Next NVFP4 MTP draw",
-    },
-    {
-        "name": "Track 4: Deep-Horizon Multi-Specialist BFS Explorer v10 (500 steps)",
-        "kernel": "rohanexploit/arc-prize-2026-bfs-explorer-agent",
-        "version": 10,
-        "file": "submission.parquet",
-        "message": "Autonomous Deep-Horizon Multi-Specialist BFS Explorer v10",
+        "message": "Autonomous Top-10 Push: SGLang v3 Master Apex (Target >= 46.82%)",
     },
 ]
 
